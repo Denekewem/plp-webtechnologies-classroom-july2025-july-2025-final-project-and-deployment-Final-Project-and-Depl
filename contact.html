@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Contract Management System</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Contract<span>Manager</span></a>
+      <button id="menuToggle4" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="mainNav4" class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions or need a demo? Send us a message.</p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+
+      <p id="formFeedback" class="feedback" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ContractManager</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
